@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+:root {
+  /* Background */
+  --bg-base: #05070b;
+  --bg-surface: #0b0f14;
+  --bg-elevated: #121821;
+
+  /* Primary */
+  --primary: #00d1ff;
+  --primary-bright: #2ee6ff;
+
+  /* Secondary */
+  --secondary: #ff7a1a;
+
+  /* Text */
+  --text-primary: #f4f8ff;
+  --text-secondary: #b8c4d6;
+  --text-muted: #7f8da3;
+
+  /* Surfaces & borders */
+  --surface-panel: rgba(18, 24, 33, 0.72);
+  --surface-panel-strong: rgba(11, 15, 20, 0.9);
+  --border-subtle: rgba(184, 196, 214, 0.14);
+  --border-strong: rgba(0, 209, 255, 0.28);
+  --border-accent: rgba(255, 122, 26, 0.35);
+
+  /* Effects */
+  --glow-primary-soft: 0 0 0 1px rgba(46, 230, 255, 0.15), 0 0 32px rgba(0, 209, 255, 0.12);
+  --glow-primary: 0 0 0 1px rgba(46, 230, 255, 0.22), 0 0 48px rgba(0, 209, 255, 0.18);
+  --glow-secondary: 0 0 0 1px rgba(255, 122, 26, 0.2), 0 0 36px rgba(255, 122, 26, 0.12);
+  --shadow-panel: 0 24px 80px rgba(0, 0, 0, 0.45);
+  --shadow-elevated: 0 12px 32px rgba(0, 0, 0, 0.35);
+
+  /* Gradients */
+  --gradient-hero:
+    radial-gradient(120% 90% at 80% 0%, rgba(0, 209, 255, 0.18), transparent 55%),
+    radial-gradient(90% 70% at 0% 100%, rgba(255, 122, 26, 0.12), transparent 50%),
+    linear-gradient(180deg, #05070b 0%, #0b0f14 100%);
+  --gradient-panel: linear-gradient(180deg, rgba(18, 24, 33, 0.85) 0%, rgba(11, 15, 20, 0.92) 100%);
+  --gradient-line: linear-gradient(90deg, transparent, rgba(46, 230, 255, 0.5), transparent);
+
+  /* Focus & selection */
+  --focus-ring: #2ee6ff;
+  --selection-bg: rgba(0, 209, 255, 0.28);
+  --selection-fg: #f4f8ff;
+
+  /* Layout */
+  --nav-height: 4.5rem;
+}
+
+@theme inline {
+  --color-background: var(--bg-base);
+  --color-surface: var(--bg-surface);
+  --color-elevated: var(--bg-elevated);
+  --color-panel: var(--surface-panel);
+  --color-primary: var(--primary);
+  --color-primary-bright: var(--primary-bright);
+  --color-secondary: var(--secondary);
+  --color-foreground: var(--text-primary);
+  --color-muted: var(--text-muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-fg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-scan {
+  0% {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(420%);
+    opacity: 0;
+  }
+}
+
+.hero-reveal {
+  opacity: 0;
+  animation: hero-fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-reveal-1 { animation-delay: 0.02s; }
+.hero-reveal-2 { animation-delay: 0.14s; }
+.hero-reveal-3 { animation-delay: 0.26s; }
+.hero-reveal-4 { animation-delay: 0.38s; }
+.hero-reveal-5 { animation-delay: 0.5s; }
+.hero-reveal-6 { animation-delay: 0.62s; }
+
+.hero-scan {
+  animation: hero-scan 4.5s ease-in-out 0.8s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-scan {
+    display: none;
+  }
+}
+
+@media (hover: none) {
+  .group:hover .group-hover\:opacity-100 {
+    /* avoid sticky hover-only decorative emphasis on touch devices */
+  }
+}
