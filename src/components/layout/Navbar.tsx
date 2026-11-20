@@ -30,8 +30,9 @@ export function Navbar({ locale, dict, path = "" }: NavbarProps) {
   const languageHref = `/${otherLocale}${path}`;
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--border-subtle)]/80 bg-[rgba(5,7,11,0.72)] backdrop-blur-xl">
-      <PageContainer className="flex h-[var(--nav-height)] items-center justify-between gap-4">
+    <header className="sticky top-0 z-50 border-b border-[var(--border-subtle)]/70 bg-[rgba(5,7,11,0.62)] shadow-[0_1px_0_rgba(46,230,255,0.08),0_12px_40px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[linear-gradient(90deg,transparent,rgba(46,230,255,0.35),transparent)]" aria-hidden="true" />
+      <PageContainer className="relative flex h-[var(--nav-height)] items-center justify-between gap-4">
         <Link href={homeHref} className="flex items-center gap-2 font-semibold tracking-wide text-foreground">
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-[var(--border-strong)] bg-[rgba(0,209,255,0.08)] font-mono text-xs text-primary-bright">
             MC
@@ -52,43 +53,52 @@ export function Navbar({ locale, dict, path = "" }: NavbarProps) {
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
-          <div className="inline-flex items-center rounded-md border border-[var(--border-subtle)] bg-[rgba(18,24,33,0.5)] p-1" aria-label={dict.nav.language}>
+          <div className="inline-flex items-center rounded-lg border border-[var(--border-subtle)] bg-[rgba(18,24,33,0.72)] p-1" aria-label={dict.nav.language}>
             <Link
-              href={`/${locale}${path}`}
+              href={`/tr${path}`}
               className={cn(
-                "rounded px-2.5 py-1 text-xs font-medium",
-                locale === "tr" ? "bg-[rgba(0,209,255,0.14)] text-primary-bright" : "text-[var(--text-secondary)] hover:text-foreground",
+                "inline-flex min-h-8 items-center justify-center rounded-md px-3 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)]",
+                locale === "tr"
+                  ? "bg-primary text-[#031016] shadow-[0_0_0_1px_rgba(46,230,255,0.25)]"
+                  : "text-[var(--text-secondary)] hover:bg-[rgba(18,24,33,0.9)] hover:text-foreground",
               )}
               aria-current={locale === "tr" ? "page" : undefined}
             >
               {LOCALE_LABELS.tr}
             </Link>
             <Link
-              href={languageHref}
+              href={`/en${path}`}
               className={cn(
-                "rounded px-2.5 py-1 text-xs font-medium",
-                locale === "en" ? "bg-[rgba(0,209,255,0.14)] text-primary-bright" : "text-[var(--text-secondary)] hover:text-foreground",
+                "inline-flex min-h-8 items-center justify-center rounded-md px-3 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)]",
+                locale === "en"
+                  ? "bg-primary text-[#031016] shadow-[0_0_0_1px_rgba(46,230,255,0.25)]"
+                  : "text-[var(--text-secondary)] hover:bg-[rgba(18,24,33,0.9)] hover:text-foreground",
               )}
               aria-current={locale === "en" ? "page" : undefined}
             >
               {LOCALE_LABELS.en}
             </Link>
           </div>
-          <Button href={`${homeHref}#intro`} size="sm" variant="primary">
+          <Button
+            href={`${homeHref}#intro`}
+            size="md"
+            variant="secondary"
+            className="w-full !border-white/80 !bg-transparent !text-foreground !shadow-none hover:!border-[var(--border-strong)] hover:!bg-[rgba(24,34,46,0.96)] hover:!text-white active:!border-[var(--border-strong)] active:!bg-[rgba(24,34,46,0.96)] active:!text-white sm:w-auto sm:min-w-[11.5rem]"
+          >
             {dict.nav.cta}
           </Button>
         </div>
 
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-[var(--border-subtle)] text-[var(--text-secondary)] hover:text-foreground md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[var(--border-subtle)] bg-[rgba(18,24,33,0.55)] text-foreground transition-colors hover:border-[var(--border-strong)] hover:bg-[rgba(24,34,46,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] md:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? dict.nav.menuClose : dict.nav.menuOpen}
           onClick={() => setOpen((v) => !v)}
         >
           <span className="sr-only">{open ? dict.nav.menuClose : dict.nav.menuOpen}</span>
-          <span aria-hidden="true" className="text-lg leading-none">{open ? "×" : "≡"}</span>
+          <span aria-hidden="true" className="text-xl font-semibold leading-none">{open ? "×" : "≡"}</span>
         </button>
       </PageContainer>
 
@@ -99,30 +109,46 @@ export function Navbar({ locale, dict, path = "" }: NavbarProps) {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-md px-3 py-2 text-sm text-[var(--text-secondary)] hover:bg-[rgba(18,24,33,0.8)] hover:text-foreground"
+                className="flex min-h-10 items-center rounded-md px-3 py-2 text-sm text-[var(--text-secondary)] transition-colors hover:bg-[rgba(18,24,33,0.8)] hover:text-foreground"
                 onClick={() => setOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
             <div className="mt-2 flex items-center gap-2 border-t border-[var(--border-subtle)] pt-3">
-              <span className="text-xs text-[var(--text-muted)]">{dict.nav.language}:</span>
+              <span className="text-xs font-medium text-[var(--text-secondary)]">{dict.nav.language}:</span>
               <Link
-                href={`/${locale}${path}`}
-                className={cn("rounded border px-2 py-1 text-xs", locale === "tr" ? "border-[var(--border-strong)] text-primary-bright" : "border-[var(--border-subtle)] text-[var(--text-secondary)]")}
+                href={`/tr${path}`}
+                className={cn(
+                  "inline-flex min-h-8 items-center justify-center rounded-md border px-3 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)]",
+                  locale === "tr"
+                    ? "border-[rgba(46,230,255,0.45)] bg-primary text-[#031016]"
+                    : "border-[var(--border-subtle)] bg-[rgba(18,24,33,0.45)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] hover:text-foreground",
+                )}
                 onClick={() => setOpen(false)}
               >
                 TR
               </Link>
               <Link
-                href={languageHref}
-                className={cn("rounded border px-2 py-1 text-xs", locale === "en" ? "border-[var(--border-strong)] text-primary-bright" : "border-[var(--border-subtle)] text-[var(--text-secondary)]")}
+                href={`/en${path}`}
+                className={cn(
+                  "inline-flex min-h-8 items-center justify-center rounded-md border px-3 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)]",
+                  locale === "en"
+                    ? "border-[rgba(46,230,255,0.45)] bg-primary text-[#031016]"
+                    : "border-[var(--border-subtle)] bg-[rgba(18,24,33,0.45)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] hover:text-foreground",
+                )}
                 onClick={() => setOpen(false)}
               >
                 EN
               </Link>
             </div>
-            <Button href={`${homeHref}#intro`} size="sm" className="mt-2 w-full" onClick={() => setOpen(false)}>
+            <Button
+              href={`${homeHref}#intro`}
+              size="md"
+              variant="secondary"
+              className="mt-2 w-full !border-white/80 !bg-transparent !text-foreground !shadow-none hover:!border-[var(--border-strong)] hover:!bg-[rgba(24,34,46,0.96)] hover:!text-white active:!border-[var(--border-strong)] active:!bg-[rgba(24,34,46,0.96)] active:!text-white sm:w-auto sm:min-w-[11.5rem]"
+              onClick={() => setOpen(false)}
+            >
               {dict.nav.cta}
             </Button>
           </PageContainer>

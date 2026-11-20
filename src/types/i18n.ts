@@ -66,6 +66,8 @@ export type Dictionary = {
       description: string;
       primaryCta: string;
       secondaryCta: string;
+      status: string;
+      clarityPoints: string[];
       indicators: string[];
     };
     intro: {

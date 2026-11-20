@@ -84,9 +84,9 @@ export function PromoVideoSection({ dict }: { dict: Dictionary }) {
                       type="button"
                       disabled
                       aria-disabled="true"
-                      className="mt-5 inline-flex cursor-not-allowed items-center gap-2 rounded-md border border-[var(--border-subtle)] bg-[rgba(5,7,11,0.55)] px-4 py-2 text-xs font-medium uppercase tracking-[0.14em] text-[var(--text-muted)] sm:text-sm"
+                      className="mt-5 inline-flex min-h-11 cursor-not-allowed items-center gap-2 rounded-lg border border-[rgba(184,196,214,0.22)] bg-[rgba(18,24,33,0.72)] px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--text-secondary)] sm:text-sm"
                     >
-                      <span aria-hidden="true" className="inline-block border-y-[5px] border-y-transparent border-l-[8px] border-l-[var(--text-muted)]" />
+                      <span aria-hidden="true" className="inline-block border-y-[5px] border-y-transparent border-l-[8px] border-l-[var(--text-secondary)]" />
                       {video.playLabel}
                     </button>
 

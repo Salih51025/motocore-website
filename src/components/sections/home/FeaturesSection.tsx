@@ -84,9 +84,10 @@ export function FeaturesSection({ dict }: { dict: Dictionary }) {
             return (
               <article
                 key={item.id}
-                className={`${layoutClass} group relative overflow-hidden rounded-2xl border border-[var(--border-subtle)] bg-[linear-gradient(180deg,rgba(18,24,33,0.78),rgba(11,15,20,0.9))] p-5 transition-colors duration-300 hover:border-[var(--border-strong)] sm:p-6`}
+                className={`${layoutClass} future-card group relative overflow-hidden rounded-2xl border border-[var(--border-subtle)] bg-[linear-gradient(180deg,rgba(18,24,33,0.78),rgba(11,15,20,0.92))] p-5 sm:p-6`}
               >
-                <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 [@media(hover:hover)]:group-hover:opacity-100 [background:radial-gradient(80%_60%_at_100%_0%,rgba(0,209,255,0.08),transparent_60%)]" />
+                <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 [@media(hover:hover)]:group-hover:opacity-100 [background:radial-gradient(80%_60%_at_100%_0%,rgba(0,209,255,0.1),transparent_60%)]" />
+                <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(46,230,255,0.35),transparent)] opacity-70" />
 
                 <div className="relative z-[1] flex h-full flex-col">
                   <div className="flex items-start justify-between gap-4">

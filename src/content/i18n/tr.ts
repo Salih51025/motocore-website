@@ -61,11 +61,17 @@ export const tr: Dictionary = {
       eyebrow: "DİJİTAL MOTOSİKLET GARAJI",
       title: "MotoCore",
       sloganPrimary: "Motosikletin için kişisel dijital garaj.",
-      sloganSecondary: "MT-07 odaklı konsept vitrinle keşfet, kişiselleştir ve düzenle.",
+      sloganSecondary: "Yamaha MT-07 odaklı konsept vitrin",
       description:
-        "MotoCore; motosikletini dijital ortamda keşfetmeyi, kişiselleştirme vizyonunu şekillendirmeyi ve bakım takibini daha düzenli hayal etmeyi amaçlayan bir dijital garaj konseptidir.",
+        "MotoCore; motosikletini 3D ortamda keşfetmeni, kişiselleştirme fikirlerini denemeni ve bakım sürecini tek bir dijital alanda düzenli hayal etmeni sağlar.",
       primaryCta: "MotoCore'u Keşfet",
       secondaryCta: "Özellikleri İncele",
+      status: "Konsept vitrin • Uygulama geliştirme aşamasında",
+      clarityPoints: [
+        "3D garajda incele",
+        "Renk ve parça kişiselleştir",
+        "Bakım takibini planla",
+      ],
       indicators: [
         "YAMAHA MT-07 FOCUS",
         "DIGITAL GARAGE",

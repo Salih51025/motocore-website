@@ -167,3 +167,111 @@ a {
     /* avoid sticky hover-only decorative emphasis on touch devices */
   }
 }
+
+/* Futuristic / from-the-future visual system */
+.future-surface {
+  isolation: isolate;
+}
+
+.aurora-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.28;
+  mix-blend-mode: screen;
+  animation: aurora-float 14s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.aurora-orb-a {
+  top: -8%;
+  right: -6%;
+  width: 34rem;
+  height: 22rem;
+  background: radial-gradient(circle at 30% 30%, rgba(46, 230, 255, 0.45), rgba(0, 209, 255, 0.08) 55%, transparent 72%);
+}
+
+.aurora-orb-b {
+  bottom: -10%;
+  left: -8%;
+  width: 28rem;
+  height: 20rem;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 122, 26, 0.22), rgba(0, 209, 255, 0.06) 50%, transparent 72%);
+  animation-duration: 18s;
+  animation-delay: -4s;
+}
+
+.scanline-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, transparent 0%, rgba(46, 230, 255, 0.03) 50%, transparent 100%);
+  background-size: 100% 4px, 100% 100%;
+  opacity: 0.12;
+  mix-blend-mode: soft-light;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 9999px;
+  background: var(--primary-bright);
+  box-shadow: 0 0 0 4px rgba(46, 230, 255, 0.12), 0 0 14px rgba(46, 230, 255, 0.55);
+  animation: pulse-glow 2.4s ease-in-out infinite;
+}
+
+.future-card {
+  position: relative;
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease, background-color 220ms ease;
+}
+
+@media (hover: hover) {
+  .future-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: 0 0 0 1px rgba(46, 230, 255, 0.08), 0 12px 30px rgba(0, 0, 0, 0.28);
+    transform: translateY(-1px);
+  }
+}
+
+.glass-surface {
+  background: linear-gradient(180deg, rgba(18, 24, 33, 0.72), rgba(11, 15, 20, 0.82));
+  backdrop-filter: blur(14px);
+}
+
+.neon-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(46, 230, 255, 0.5), rgba(255, 122, 26, 0.25), transparent);
+}
+
+@keyframes aurora-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.22;
+  }
+  50% {
+    transform: translate3d(-2%, 3%, 0) scale(1.05);
+    opacity: 0.34;
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-orb,
+  .status-dot {
+    animation: none !important;
+  }
+}

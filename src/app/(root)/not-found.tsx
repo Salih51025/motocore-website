@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Button } from "@/components/ui/Button";
 
 export default function NotFound() {
   return (
@@ -9,9 +9,13 @@ export default function NotFound() {
         <p className="mt-3 text-sm leading-6 text-[var(--text-secondary)]">
           İstenen sayfa bulunamadı. Varsayılan dile dönebilirsiniz.
         </p>
-        <div className="mt-6 flex justify-center gap-3">
-          <Link href="/tr" className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-[#041015] hover:bg-primary-bright">TR Ana Sayfa</Link>
-          <Link href="/en" className="rounded-md border border-[var(--border-strong)] px-4 py-2 text-sm font-medium text-foreground hover:bg-[rgba(0,209,255,0.08)]">EN Home</Link>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <Button href="/tr" variant="primary" size="md">
+            TR Ana Sayfa
+          </Button>
+          <Button href="/en" variant="secondary" size="md">
+            EN Home
+          </Button>
         </div>
       </div>
     </main>

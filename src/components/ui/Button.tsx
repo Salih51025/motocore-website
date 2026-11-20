@@ -6,18 +6,18 @@ type Variant = "primary" | "secondary" | "ghost";
 type Size = "sm" | "md";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-md font-medium transition-colors focus-visible:outline-none disabled:opacity-50 disabled:pointer-events-none";
+  "inline-flex cursor-pointer select-none items-center justify-center gap-2 rounded-lg text-center font-semibold leading-tight tracking-[0.01em] transition-[color,background-color,border-color,box-shadow,transform] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-base)] disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-55";
 const variants: Record<Variant, string> = {
   primary:
-    "bg-primary text-[#041015] hover:bg-primary-bright shadow-[0_0_0_1px_rgba(46,230,255,0.25),0_8px_24px_rgba(0,209,255,0.18)]",
+    "border border-[rgba(46,230,255,0.45)] bg-[var(--primary)] text-[#031016] shadow-[0_0_0_1px_rgba(46,230,255,0.2),0_10px_28px_rgba(0,209,255,0.2)] hover:bg-[var(--primary-bright)] hover:shadow-[0_0_0_1px_rgba(46,230,255,0.32),0_14px_34px_rgba(0,209,255,0.26)] active:translate-y-px",
   secondary:
-    "border border-[var(--border-strong)] bg-[rgba(0,209,255,0.06)] text-foreground hover:bg-[rgba(0,209,255,0.12)]",
+    "border border-[rgba(184,196,214,0.28)] bg-[rgba(18,24,33,0.88)] text-[var(--text-primary)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] hover:border-[var(--border-strong)] hover:bg-[rgba(24,34,46,0.96)] hover:text-white active:translate-y-px",
   ghost:
-    "border border-[var(--border-subtle)] bg-transparent text-[var(--text-secondary)] hover:text-foreground hover:border-[var(--border-strong)]",
+    "border border-[var(--border-subtle)] bg-[rgba(11,15,20,0.35)] text-[var(--text-primary)] hover:border-[var(--border-strong)] hover:bg-[rgba(18,24,33,0.7)] hover:text-white active:translate-y-px",
 };
 const sizes: Record<Size, string> = {
-  sm: "h-9 px-3 text-sm",
-  md: "h-11 px-5 text-sm sm:text-base",
+  sm: "min-h-9 px-4 py-2 text-sm",
+  md: "min-h-11 px-5 py-2.5 text-sm sm:text-base",
 };
 
 type CommonProps = {

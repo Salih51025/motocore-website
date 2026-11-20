@@ -61,11 +61,17 @@ export const en: Dictionary = {
       eyebrow: "DIGITAL MOTORCYCLE GARAGE",
       title: "MotoCore",
       sloganPrimary: "A personal digital garage for your motorcycle.",
-      sloganSecondary: "Explore, personalize, and organize through an MT-07 concept showcase.",
+      sloganSecondary: "Yamaha MT-07 concept showcase",
       description:
-        "MotoCore is a digital garage concept designed to help you explore your motorcycle, shape a personalization vision, and imagine maintenance tracking in one refined space.",
+        "MotoCore helps you explore your motorcycle in 3D, experiment with personalization ideas, and imagine maintenance tracking in one organized digital space.",
       primaryCta: "Explore MotoCore",
       secondaryCta: "View Features",
+      status: "Concept showcase • App in development",
+      clarityPoints: [
+        "Inspect in a 3D garage",
+        "Customize colors and parts",
+        "Plan maintenance tracking",
+      ],
       indicators: [
         "YAMAHA MT-07 FOCUS",
         "DIGITAL GARAGE",
