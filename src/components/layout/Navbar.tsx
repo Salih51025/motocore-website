@@ -82,8 +82,8 @@ export function Navbar({ locale, dict, path = "" }: NavbarProps) {
           <Button
             href={`${homeHref}#intro`}
             size="md"
-            variant="secondary"
-            className="w-full !border-white/80 !bg-transparent !text-foreground !shadow-none hover:!border-[var(--border-strong)] hover:!bg-[rgba(24,34,46,0.96)] hover:!text-white active:!border-[var(--border-strong)] active:!bg-[rgba(24,34,46,0.96)] active:!text-white sm:w-auto sm:min-w-[11.5rem]"
+            variant="primary"
+            className="w-full sm:w-auto sm:min-w-[11rem]"
           >
             {dict.nav.cta}
           </Button>
@@ -159,8 +159,8 @@ export function Navbar({ locale, dict, path = "" }: NavbarProps) {
             <Button
               href={`${homeHref}#intro`}
               size="md"
-              variant="secondary"
-              className="mt-2 w-full !border-white/80 !bg-transparent !text-foreground !shadow-none hover:!border-[var(--border-strong)] hover:!bg-[rgba(24,34,46,0.96)] hover:!text-white active:!border-[var(--border-strong)] active:!bg-[rgba(24,34,46,0.96)] active:!text-white sm:w-auto sm:min-w-[11.5rem]"
+              variant="primary"
+              className="mt-2 w-full sm:w-auto sm:min-w-[11rem]"
               onClick={() => setOpen(false)}
             >
               {dict.nav.cta}

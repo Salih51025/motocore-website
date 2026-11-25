@@ -269,9 +269,90 @@ a {
   }
 }
 
+/* Futuristic button system */
+.btn-future::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(120deg, transparent 20%, rgba(46, 230, 255, 0.45), rgba(255, 122, 26, 0.2), transparent 80%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 280ms ease;
+  pointer-events: none;
+}
+
+.btn-future::after {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: -35%;
+  width: 45%;
+  height: 340%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+  transform: rotate(18deg) translateX(-220%);
+  transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  .btn-future:hover::before {
+    opacity: 1;
+  }
+
+  .btn-future:hover::after {
+    transform: rotate(18deg) translateX(420%);
+  }
+}
+
+.btn-future:active::after {
+  opacity: 0.6;
+}
+
+@keyframes border-shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-float-soft {
+  animation: float-soft 4.5s ease-in-out infinite;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+
 @media (prefers-reduced-motion: reduce) {
   .aurora-orb,
-  .status-dot {
+  .status-dot,
+  .animate-float-soft {
+    animation: none !important;
+  }
+
+  .btn-future::before,
+  .btn-future::after {
+    transition: none !important;
     animation: none !important;
   }
 }

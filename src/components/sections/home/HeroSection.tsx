@@ -74,8 +74,8 @@ export function HeroSection({ dict }: { dict: Dictionary }) {
               <Button
                 href="#intro"
                 size="md"
-                variant="secondary"
-                className="w-full !border-white/80 !bg-transparent !text-foreground !shadow-none hover:!border-[var(--border-strong)] hover:!bg-[rgba(24,34,46,0.96)] hover:!text-white active:!border-[var(--border-strong)] active:!bg-[rgba(24,34,46,0.96)] active:!text-white sm:w-auto sm:min-w-[11.5rem]"
+                variant="primary"
+                className="w-full sm:w-auto sm:min-w-[12rem]"
               >
                 {hero.primaryCta}
               </Button>
@@ -83,7 +83,7 @@ export function HeroSection({ dict }: { dict: Dictionary }) {
                 href="#gallery"
                 size="md"
                 variant="secondary"
-                className="w-full !border-white/80 !bg-transparent !text-foreground !shadow-none hover:!border-[var(--border-strong)] hover:!bg-[rgba(24,34,46,0.96)] hover:!text-white active:!border-[var(--border-strong)] active:!bg-[rgba(24,34,46,0.96)] active:!text-white sm:w-auto sm:min-w-[11.5rem]"
+                className="w-full sm:w-auto sm:min-w-[12rem]"
               >
                 {hero.secondaryCta}
               </Button>

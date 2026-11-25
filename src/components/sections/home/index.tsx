@@ -1,5 +1,6 @@
 import type { Locale } from "@/types/i18n";
 import type { Dictionary } from "@/content/i18n";
+import { Reveal } from "@/components/effects/Reveal";
 import { HeroSection } from "./HeroSection";
 import { IntroSection } from "./IntroSection";
 import { FeaturesSection } from "./FeaturesSection";
@@ -14,14 +15,14 @@ export function HomeSections({ locale, dict }: { locale: Locale; dict: Dictionar
   return (
     <>
       <HeroSection dict={dict} />
-      <IntroSection dict={dict} />
-      <FeaturesSection dict={dict} />
-      <Experience3DSection dict={dict} />
-      <ScreenshotsGallery dict={dict} locale={locale} />
-      <PromoVideoSection dict={dict} />
-      <AppScreenshotsGallery dict={dict} locale={locale} />
-      <PermissionsPreviewSection locale={locale} dict={dict} />
-      <FinalCTASection dict={dict} />
+      <Reveal><IntroSection dict={dict} /></Reveal>
+      <Reveal><FeaturesSection dict={dict} /></Reveal>
+      <Reveal><Experience3DSection dict={dict} /></Reveal>
+      <Reveal><ScreenshotsGallery dict={dict} locale={locale} /></Reveal>
+      <Reveal><PromoVideoSection dict={dict} /></Reveal>
+      <Reveal><AppScreenshotsGallery dict={dict} locale={locale} /></Reveal>
+      <Reveal><PermissionsPreviewSection locale={locale} dict={dict} /></Reveal>
+      <Reveal><FinalCTASection dict={dict} /></Reveal>
     </>
   );
 }
