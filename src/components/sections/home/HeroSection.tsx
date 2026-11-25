@@ -72,7 +72,7 @@ export function HeroSection({ dict }: { dict: Dictionary }) {
 
             <div className="hero-reveal hero-reveal-6 mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button
-                href="#intro"
+                href="#experience"
                 size="md"
                 variant="primary"
                 className="w-full sm:w-auto sm:min-w-[12rem]"
@@ -80,7 +80,7 @@ export function HeroSection({ dict }: { dict: Dictionary }) {
                 {hero.primaryCta}
               </Button>
               <Button
-                href="#gallery"
+                href="#intro"
                 size="md"
                 variant="secondary"
                 className="w-full sm:w-auto sm:min-w-[12rem]"

@@ -14,11 +14,11 @@ test("3-second clarity: TR hero contains core understanding signals", () => {
   const required = [
     "DİJİTAL MOTOSİKLET GARAJI",
     "MotoCore",
-    "Motosikletin için kişisel dijital garaj.",
+    "Garajın artık cebinde.",
     "Konsept vitrin • Uygulama geliştirme aşamasında",
-    "3D garajda incele",
-    "Renk ve parça kişiselleştir",
-    "Bakım takibini planla",
+    "3D dijital garajda incele",
+    "Parçaları etkileşimli keşfet",
+    "Bakım ve yönetimi tek yerde planla",
   ];
   for (const signal of required) {
     assert.ok(tr.includes(signal), `TR hero missing clarity signal: ${signal}`);
@@ -30,11 +30,11 @@ test("3-second clarity: EN hero contains core understanding signals", () => {
   const required = [
     "DIGITAL MOTORCYCLE GARAGE",
     "MotoCore",
-    "A personal digital garage for your motorcycle.",
+    "Your garage, now in your pocket.",
     "Concept showcase • App in development",
-    "Inspect in a 3D garage",
-    "Customize colors and parts",
-    "Plan maintenance tracking",
+    "Explore in a 3D digital garage",
+    "Inspect parts interactively",
+    "Plan maintenance and management in one place",
   ];
   for (const signal of required) {
     assert.ok(en.includes(signal), `EN hero missing clarity signal: ${signal}`);

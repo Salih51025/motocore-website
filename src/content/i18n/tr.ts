@@ -11,7 +11,7 @@ export const tr: Dictionary = {
     home: {
       title: "MotoCore | Dijital Motosiklet Garajı",
       description:
-        "MotoCore, motosikletini dijital dünyada kişiselleştirmeni, bakımını takip etmeni ve kendi garajını oluşturmanı sağlayan yeni nesil bir deneyimdir.",
+        "MotoCore; motosikletini dijital ortamda görüntüleyebileceğin, desteklenen modellerin parçalarını etkileşimli inceleyebileceğin ve bakım süreçlerini tek platformda yönetmeyi hedefleyen dijital motosiklet garajıdır.",
     },
     privacy: {
       title: "Gizlilik Politikası",
@@ -60,104 +60,123 @@ export const tr: Dictionary = {
     hero: {
       eyebrow: "DİJİTAL MOTOSİKLET GARAJI",
       title: "MotoCore",
-      sloganPrimary: "Motosikletin için kişisel dijital garaj.",
-      sloganSecondary: "Yamaha MT-07 odaklı konsept vitrin",
+      sloganPrimary: "Garajın artık cebinde.",
+      sloganSecondary: "3D garaj • Parça inceleme • Motosiklet yönetimi",
       description:
-        "MotoCore; motosikletini 3D ortamda keşfetmeni, kişiselleştirme fikirlerini denemeni ve bakım sürecini tek bir dijital alanda düzenli hayal etmeni sağlar.",
-      primaryCta: "MotoCore'u Keşfet",
-      secondaryCta: "Fotoğraf ve Videoyu Gör",
+        "Motosikletini yalnızca kullanmakla kalma. Onu dijital ortamda keşfet, parçalarını incele ve bakım süreçlerini kendi garajından yönet.",
+      primaryCta: "Dijital Garajı Keşfet",
+      secondaryCta: "MotoCore'u Tanı",
       status: "Konsept vitrin • Uygulama geliştirme aşamasında",
       clarityPoints: [
-        "3D garajda incele",
-        "Renk ve parça kişiselleştir",
-        "Bakım takibini planla",
+        "3D dijital garajda incele",
+        "Parçaları etkileşimli keşfet",
+        "Bakım ve yönetimi tek yerde planla",
       ],
       indicators: [
-        "YAMAHA MT-07 FOCUS",
-        "DIGITAL GARAGE",
-        "CUSTOM STUDIO",
-        "MAINTENANCE VIEW",
+        "3D DIGITAL GARAGE",
+        "PART EXPLORATION",
+        "MAINTENANCE VISION",
+        "MOTOCORE PLATFORM",
       ],
     },
     intro: {
-      eyebrow: "TANITIM",
-      title: "Dijital garajına giriş yap",
+      eyebrow: "MOTOCORE NEDİR?",
+      title: "Motosikletine ait her şey, tek bir dijital garajda.",
       description:
-        "MotoCore, motosikletini dijital dünyada keşfetmen, kişiselleştirmen ve bakımını düzenli şekilde takip etmen için tasarlanan bir deneyim vizyonudur. Seçimlerin burada başlar; garajın, stillerin ve kontrol alanın tek bir arayüzde buluşur.",
-      panelEyebrow: "MOTOCORE ODAĞI",
-      panelTitle: "Tek bakışta temel fikir",
+        "MotoCore, motosikletini dijital ortamda görüntülemeni, desteklenen modellerin parçalarını etkileşimli olarak incelemeni ve bakım bilgilerini düzenli şekilde takip etmeni sağlayan yeni nesil bir motosiklet platformudur.",
+      panelEyebrow: "TEK PLATFORM",
+      panelTitle: "Üç temel deneyim, tek akış",
       panelDescription:
-        "Bu vitrin; keşif, kişiselleştirme ve bakım odağını aynı dijital garaj anlatısında bir araya getirir.",
+        "3D görselleştirme, parça kişiselleştirme ve motosiklet yönetimini tek bir deneyimde buluşturur.",
       panelHighlights: [
-        "Keşif ve inceleme vizyonu",
-        "Kişiselleştirme odağı",
-        "Bakım düzeni yaklaşımı",
+        "3D görselleştirme ve inceleme",
+        "Parça seçimi ve kişiselleştirme",
+        "Motosiklet yönetimi ve bakım takibi",
       ],
     },
     features: {
-      eyebrow: "ÖZELLİKLER",
-      title: "Dijital garaj deneyimini şekillendiren temel yetenekler",
+      eyebrow: "TEMEL ALANLAR",
+      title: "MotoCore deneyimini oluşturan üç temel alan",
       description:
-        "MotoCore, motosikletini görüntüleme, kişiselleştirme, bakımını düzenleme ve dijital garajını büyütme fikrini tek bir akışta bir araya getirmeyi hedefler.",
+        "3D görselleştirme, parça kişiselleştirme ve motosiklet yönetimini tek bir dijital garaj deneyiminde bir araya getirir.",
       items: [
         {
           id: "garage",
-          kicker: "01 / GARAGE CORE",
-          title: "3D Motorcycle Garage",
+          kicker: "01 / 3D GARAJ",
+          title: "3D Dijital Garaj",
           description:
-            "Motosikletini üç boyutlu bir ortamda incele, dijital garajında sergile ve her detayı daha net görerek kendi alanını oluştur.",
-          highlights: ["360° inceleme odağı", "Dijital vitrin alanı", "Kişisel garaj düzeni"],
+            "Desteklenen motosiklet modellerini 3D garajında görüntüle, farklı açılardan incele ve detaylara yaklaşarak motosikletinle dijital ortamda etkileşime geç.",
+          highlights: ["3D görüntüleme", "Desteklenen modeller", "Etkileşimli inceleme"],
         },
         {
           id: "customization",
-          kicker: "02 / BUILD STUDIO",
-          title: "Deep Customization",
+          kicker: "02 / PARÇA & KİŞİSELLEŞTİRME",
+          title: "Parça Seçimi ve Kişiselleştirme",
           description:
-            "Renkleri değiştir, parçaları kişiselleştir ve sök-tak mantığıyla motosikletinin karakterini adım adım yeniden şekillendir.",
-          highlights: ["Renk kombinasyonları", "Parça odaklı düzenleme", "Tarzını yansıtan yapılar"],
+            "Desteklenen modellerde parçaları ayrı ayrı seç, görsel olarak sök veya yeniden tak. Motosikletinin dijital konfigürasyonunu kendi tercihlerine göre düzenle.",
+          highlights: ["Parça seçimi", "Görsel sök-tak", "Kişisel konfigürasyon"],
         },
         {
           id: "maintenance",
-          kicker: "03 / CARE LOG",
-          title: "Maintenance Tracking",
+          kicker: "03 / YÖNETİM & BAKIM",
+          title: "Motosiklet Yönetimi ve Bakım Takibi",
           description:
-            "Bakım geçmişini kayıt altında tut, yapılan işlemleri düzenli izle ve motosikletinin bakım sürecini daha planlı yönet.",
-          highlights: ["Bakım geçmişi görünümü", "İşlem takibi", "Düzenli kayıt alışkanlığı"],
-        },
-        {
-          id: "digital-garage",
-          kicker: "04 / PERSONAL SPACE",
-          title: "Your Digital Garage",
-          description:
-            "Motosikletini sana özel bir dijital alanda sakla, yapılandırmalarını düzenle ve garajını zamanla büyüyen bir koleksiyon gibi yönet.",
-          highlights: ["Kişisel alan", "Kayıtlı yapılandırmalar", "Garaj odaklı deneyim"],
-        },
-        {
-          id: "share",
-          kicker: "05 / COMMUNITY SIGNAL",
-          title: "Share Your Build",
-          description:
-            "Oluşturduğun tasarımları paylaş, farklı yapıları keşfet ve ilham veren motosiklet kombinasyonlarıyla topluluk içinde görünür ol.",
-          highlights: ["Yapı paylaşımı", "Topluluk keşfi", "İlham veren tasarımlar"],
+            "Motosiklet bilgilerini ve bakım süreçlerini düzenli tutmayı hedefleyen dijital yönetim deneyimi. Gelişmiş bakım kayıtları ve hatırlatmalar yol haritasında yer alır.",
+          highlights: ["Motosiklet yönetimi", "Bakım takibi vizyonu", "Tek platform hedefi"],
         },
       ],
     },
     experience: {
-      eyebrow: "3D DENEYİM VİTRİNİ",
-      title: "MT-07’yi dijital garajda inceleme vizyonu",
+      eyebrow: "3D DİJİTAL GARAJ",
+      title: "Motosikletini sadece görme. İçinde keşfet.",
       description:
-        "Bu bölüm, Yamaha MT-07 odaklı dijital garaj konseptinin nasıl keşfedilebileceğini sinematik bir vitrin diliyle anlatır. Gerçek görsel ve gelişmiş etkileşimler eklendikçe deneyim katmanları derinleşebilir.",
-      showcaseLabel: "YAMAHA MT-07 / DIGITAL GARAGE",
+        "Desteklenen motosiklet modellerini 3D garajında görüntüle. Farklı açılardan incele, detaylarına yaklaş ve motosikletinle etkileşime geç.",
+      showcaseLabel: "MOTOCORE / 3D GARAGE",
       showcaseNote:
-        "Gerçek vitrin görseli henüz eklenmedi. Görsel sağlandığında bu alan, tasarım değişikliği gerektirmeden MT-07 showcase kompozisyonunu gösterecek şekilde hazırdır.",
-      panelTitle: "Deneyim odağı (konsept)",
+        "Gerçek vitrin görseli henüz eklenmedi. Görsel sağlandığında bu alan, tasarım değişikliği gerektirmeden 3D garaj kompozisyonunu gösterecek şekilde hazırdır.",
+      panelTitle: "Garaj deneyimi odağı",
       panelItems: [
-        { label: "3D İnceleme", value: "Motosikleti farklı açılardan keşfetme fikrini temsil eden bir vitrin konsepti." },
-        { label: "Parça Kişiselleştirme", value: "Parça odaklı düzenleme ve görsel varyasyon vizyonu için planlanan alan." },
-        { label: "Renk Kişiselleştirme", value: "Renk ve stil kombinasyonlarını hayal etmeye yönelik konsept yaklaşımı." },
-        { label: "Dijital Garaj", value: "Motosikletini kişisel bir dijital alanda toplama fikrini anlatan deneyim katmanı." },
+        { label: "3D İnceleme", value: "Desteklenen modelleri farklı açılardan görüntüle ve detayları yakından incele." },
+        { label: "Etkileşimli Keşif", value: "Motosikletinle dijital ortamda etkileşime geçebileceğin bir garaj deneyimi." },
+        { label: "Desteklenen Modeller", value: "Mevcut katalogda MT-07 2024, Yamaha YZF 2021 ve genel motosiklet modeli yer alır." },
+        { label: "Dijital Garaj", value: "Motosikletini kişisel bir dijital alanda bir araya getirme vizyonu." },
       ],
-      tags: ["3D MOTORCYCLE INSPECTION", "PART CUSTOMIZATION", "COLOR PERSONALIZATION", "DIGITAL GARAGE"],
+      tags: ["3D INSPECTION", "SUPPORTED MODELS", "INTERACTIVE GARAGE", "DIGITAL SHOWCASE"],
+    },
+    parts: {
+      eyebrow: "PARÇA YÖNETİMİ",
+      title: "Her parça, kendi hikâyesinin bir parçası.",
+      description:
+        "Desteklenen motosikletlerde parçaları ayrı ayrı seç, görsel olarak sök veya yeniden tak. Motosikletinin farklı parçalarını keşfederken dijital konfigürasyonunu kendi tercihlerine göre düzenle.",
+      highlights: [
+        "Desteklenen modellerde parça seçimi",
+        "Görsel sökme ve yeniden takma",
+        "Kişisel dijital konfigürasyon",
+      ],
+    },
+    maintenance: {
+      eyebrow: "BAKIM VE YÖNETİM",
+      title: "Yolculuğunun geçmişini unutma.",
+      description:
+        "MotoCore, motosikletlerinin kilometre ve bakım bilgilerini düzenli tutabileceğin bir yönetim deneyimi sunmayı hedefliyor. Yağ değişimi, zincir bakımı ve diğer periyodik işlemlerin geçmişini tek bir yerde takip edebileceğin bir dijital garaj oluşturuyor.",
+      highlights: [
+        "Kilometre ve bakım bilgileri",
+        "Periyodik işlem geçmişi",
+        "Tek yerde yönetim hedefi",
+      ],
+      note: "Bu alan, MotoCore'un geliştirme yol haritasındaki bakım ve yönetim vizyonunu anlatır; henüz tamamlanmamış özellikler canlı olarak sunulmaz.",
+    },
+    audience: {
+      eyebrow: "HEDEF KİTLE",
+      title: "Motosikletini daha yakından tanımak isteyen herkes için.",
+      description:
+        "İster ilk motosikletine sahip ol, ister uzun yıllardır motosiklet kullan. MotoCore; motosikletini dijital ortamda keşfetmek, parçalarını incelemek ve sahip olduğun motosikletleri daha düzenli yönetmek isteyenler için geliştiriliyor.",
+    },
+    vision: {
+      eyebrow: "VİZYON",
+      title: "Motosiklet sahipliğinin geleceği, dijital bir garajla başlıyor.",
+      description:
+        "MotoCore'un hedefi; 3D görselleştirme, kişiselleştirme ve bakım yönetimini bir araya getirerek motosiklet sahipleri için kapsamlı bir dijital ekosistem oluşturmak. Her motosikletin kendine ait bir dijital alanı, her kullanıcının kendi garajı olsun istiyoruz.",
     },
     video: {
       eyebrow: "TANITIM VİDEOSU",
@@ -251,14 +270,14 @@ export const tr: Dictionary = {
     },
     finalCta: {
       eyebrow: "MOTOCORE",
-      title: "Dijital garaj vizyonunu keşfetmeye devam et",
+      title: "Dijital garajında kontrol sende.",
       description:
-        "MotoCore deneyimi adım adım şekilleniyor. Uygulama henüz mağazalarda yayınlanmadığı için indirme bağlantısı paylaşmıyoruz; görselleri, tanıtım videosunu, özellikleri ve güncel bilgilendirme sayfalarını inceleyebilirsiniz.",
-      primaryCta: "Fotoğraf ve Videoyu Gör",
-      primaryCtaHref: "#gallery",
+        "Motosikletini keşfetmeye ve MotoCore deneyimini yaşamaya hazır mısın?",
+      primaryCta: "MotoCore'u Keşfet",
+      primaryCtaHref: "#intro",
       secondaryCta: "İzinler ve Gizlilik",
       secondaryCtaHref: "/tr/permissions",
-      note: "Mağaza bağlantıları yayımlandığında bu alan güncellenecektir. Çalışmayan indirme butonu gösterilmez.",
+      note: "Uygulama henüz mağazalarda yayınlanmadığı için indirme bağlantısı paylaşmıyoruz.",
     },
   },
   legal: {

@@ -70,16 +70,18 @@ export function FeaturesSection({ dict }: { dict: Dictionary }) {
       <PageContainer className="space-y-12">
         <SectionHeading eyebrow={features.eyebrow} title={features.title} description={features.description} />
 
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-12">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {features.items.map((item, index) => {
             const layoutClass =
-              index === 0
-                ? "md:col-span-2 xl:col-span-7"
-                : index === 1
-                  ? "xl:col-span-5"
-                  : index === 4
-                    ? "md:col-span-2 xl:col-span-6"
-                    : "xl:col-span-3 md:col-span-1";
+              features.items.length === 3
+                ? ""
+                : index === 0
+                  ? "md:col-span-2 xl:col-span-7"
+                  : index === 1
+                    ? "xl:col-span-5"
+                    : index === 4
+                      ? "md:col-span-2 xl:col-span-6"
+                      : "xl:col-span-3 md:col-span-1";
 
             return (
               <article

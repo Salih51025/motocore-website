@@ -101,6 +101,29 @@ export type Dictionary = {
       panelItems: Array<{ label: string; value: string }>;
       tags: string[];
     };
+    parts: {
+      eyebrow: string;
+      title: string;
+      description: string;
+      highlights: string[];
+    };
+    maintenance: {
+      eyebrow: string;
+      title: string;
+      description: string;
+      highlights: string[];
+      note?: string;
+    };
+    audience: {
+      eyebrow: string;
+      title: string;
+      description: string;
+    };
+    vision: {
+      eyebrow: string;
+      title: string;
+      description: string;
+    };
     video: {
       eyebrow: string;
       title: string;

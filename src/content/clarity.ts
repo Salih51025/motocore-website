@@ -26,12 +26,12 @@ export const clarityAudits: Record<Locale, ClarityAudit> = {
       {
         id: "what",
         label: "Ne olduğu",
-        expectation: "Kullanıcı MotoCore'un dijital motosiklet garajı/deneyimi olduğunu ilk bakışta anlar.",
+        expectation: "Kullanıcı MotoCore'un dijital motosiklet garajı olduğunu ilk bakışta anlar.",
       },
       {
         id: "offer",
         label: "Ne sunduğu",
-        expectation: "Kullanıcı keşfetme, kişiselleştirme ve bakım takibi gibi temel değerleri hızlıca görür.",
+        expectation: "Kullanıcı 3D garaj, parça inceleme ve bakım/yönetim vizyonunu hızlıca görür.",
       },
       {
         id: "status",
@@ -41,17 +41,17 @@ export const clarityAudits: Record<Locale, ClarityAudit> = {
       {
         id: "focus",
         label: "Odak",
-        expectation: "Yamaha MT-07 odaklı konsept bağlamı görünür ve kafa karıştırmaz.",
+        expectation: "MotoCore'un üç temel ürün alanı (3D garaj, parça/personalizasyon, bakım/yönetim) görünür.",
       },
     ],
     requiredHeroSignals: [
       "DİJİTAL MOTOSİKLET GARAJI",
       "MotoCore",
-      "Motosikletin için kişisel dijital garaj.",
+      "Garajın artık cebinde.",
       "Konsept vitrin • Uygulama geliştirme aşamasında",
-      "3D garajda incele",
-      "Renk ve parça kişiselleştir",
-      "Bakım takibini planla",
+      "3D dijital garajda incele",
+      "Parçaları etkileşimli keşfet",
+      "Bakım ve yönetimi tek yerde planla",
     ],
   },
   en: {
@@ -60,12 +60,12 @@ export const clarityAudits: Record<Locale, ClarityAudit> = {
       {
         id: "what",
         label: "What it is",
-        expectation: "Visitors immediately understand MotoCore is a digital motorcycle garage/experience.",
+        expectation: "Visitors immediately understand MotoCore is a digital motorcycle garage.",
       },
       {
         id: "offer",
         label: "What it offers",
-        expectation: "Visitors quickly see core value: explore, customize, and track maintenance.",
+        expectation: "Visitors quickly see 3D garage, part exploration, and maintenance/management vision.",
       },
       {
         id: "status",
@@ -75,17 +75,17 @@ export const clarityAudits: Record<Locale, ClarityAudit> = {
       {
         id: "focus",
         label: "Focus",
-        expectation: "The Yamaha MT-07 concept focus is visible without creating confusion.",
+        expectation: "MotoCore's three core product areas are visible: 3D garage, parts/personalization, maintenance/management.",
       },
     ],
     requiredHeroSignals: [
       "DIGITAL MOTORCYCLE GARAGE",
       "MotoCore",
-      "A personal digital garage for your motorcycle.",
+      "Your garage, now in your pocket.",
       "Concept showcase • App in development",
-      "Inspect in a 3D garage",
-      "Customize colors and parts",
-      "Plan maintenance tracking",
+      "Explore in a 3D digital garage",
+      "Inspect parts interactively",
+      "Plan maintenance and management in one place",
     ],
   },
 };

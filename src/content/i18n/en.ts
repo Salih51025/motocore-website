@@ -11,7 +11,7 @@ export const en: Dictionary = {
     home: {
       title: "MotoCore | Digital Motorcycle Garage",
       description:
-        "MotoCore is a next-generation experience that lets you personalize your ride in the digital world, track maintenance, and build your own garage.",
+        "MotoCore is a digital motorcycle garage where you can view your motorcycle in 3D, explore supported model parts interactively, and bring maintenance management into one platform.",
     },
     privacy: {
       title: "Privacy Policy",
@@ -60,104 +60,123 @@ export const en: Dictionary = {
     hero: {
       eyebrow: "DIGITAL MOTORCYCLE GARAGE",
       title: "MotoCore",
-      sloganPrimary: "A personal digital garage for your motorcycle.",
-      sloganSecondary: "Yamaha MT-07 concept showcase",
+      sloganPrimary: "Your garage, now in your pocket.",
+      sloganSecondary: "3D garage • Part exploration • Motorcycle management",
       description:
-        "MotoCore helps you explore your motorcycle in 3D, experiment with personalization ideas, and imagine maintenance tracking in one organized digital space.",
-      primaryCta: "Explore MotoCore",
-      secondaryCta: "See Photos & Video",
+        "Don't just ride your motorcycle. Explore it in a digital space, inspect its parts, and manage maintenance from your own garage.",
+      primaryCta: "Explore the Digital Garage",
+      secondaryCta: "Discover MotoCore",
       status: "Concept showcase • App in development",
       clarityPoints: [
-        "Inspect in a 3D garage",
-        "Customize colors and parts",
-        "Plan maintenance tracking",
+        "Explore in a 3D digital garage",
+        "Inspect parts interactively",
+        "Plan maintenance and management in one place",
       ],
       indicators: [
-        "YAMAHA MT-07 FOCUS",
-        "DIGITAL GARAGE",
-        "CUSTOM STUDIO",
-        "MAINTENANCE VIEW",
+        "3D DIGITAL GARAGE",
+        "PART EXPLORATION",
+        "MAINTENANCE VISION",
+        "MOTOCORE PLATFORM",
       ],
     },
     intro: {
-      eyebrow: "INTRODUCTION",
-      title: "Step into your digital garage",
+      eyebrow: "WHAT IS MOTOCORE?",
+      title: "Everything about your motorcycle, in one digital garage.",
       description:
-        "MotoCore is a concept experience designed to help you explore, personalize, and keep track of your motorcycle in an organized digital space. Your choices lead the way, with your garage, style, and control hub coming together in one interface.",
-      panelEyebrow: "MOTOCORE FOCUS",
-      panelTitle: "The core idea at a glance",
+        "MotoCore is a next-generation motorcycle platform that lets you view your motorcycle digitally, explore supported model parts interactively, and keep maintenance information organized.",
+      panelEyebrow: "ONE PLATFORM",
+      panelTitle: "Three core experiences, one flow",
       panelDescription:
-        "This showcase brings exploration, personalization, and maintenance focus together in one digital garage narrative.",
+        "It brings 3D visualization, part personalization, and motorcycle management together in a single experience.",
       panelHighlights: [
-        "Exploration and inspection vision",
-        "Personalization focus",
-        "Organized maintenance approach",
+        "3D visualization and inspection",
+        "Part selection and personalization",
+        "Motorcycle management and maintenance tracking",
       ],
     },
     features: {
-      eyebrow: "FEATURES",
-      title: "Core capabilities shaping the digital garage experience",
+      eyebrow: "CORE AREAS",
+      title: "Three core areas shaping the MotoCore experience",
       description:
-        "MotoCore aims to bring viewing, personalization, maintenance organization, and digital garage growth together in one connected flow.",
+        "MotoCore brings 3D visualization, part personalization, and motorcycle management together in one digital garage experience.",
       items: [
         {
           id: "garage",
-          kicker: "01 / GARAGE CORE",
-          title: "3D Motorcycle Garage",
+          kicker: "01 / 3D GARAGE",
+          title: "3D Digital Garage",
           description:
-            "View your motorcycle in a three-dimensional space, showcase it in your digital garage, and build a personal environment around every detail.",
-          highlights: ["360° inspection focus", "Digital showcase space", "Personal garage layout"],
+            "View supported motorcycle models in your 3D garage, inspect them from different angles, and get closer to every detail through an interactive digital experience.",
+          highlights: ["3D visualization", "Supported models", "Interactive inspection"],
         },
         {
           id: "customization",
-          kicker: "02 / BUILD STUDIO",
-          title: "Deep Customization",
+          kicker: "02 / PARTS & PERSONALIZATION",
+          title: "Part Selection and Personalization",
           description:
-            "Change colors, personalize parts, and reshape your motorcycle’s character step by step through a modular build-and-swap mindset.",
-          highlights: ["Color combinations", "Part-focused editing", "Builds that reflect your style"],
+            "On supported models, select parts individually, visually remove or reattach them, and shape your motorcycle's digital configuration to match your preferences.",
+          highlights: ["Part selection", "Visual remove/reattach", "Personal configuration"],
         },
         {
           id: "maintenance",
-          kicker: "03 / CARE LOG",
-          title: "Maintenance Tracking",
+          kicker: "03 / MANAGEMENT & MAINTENANCE",
+          title: "Motorcycle Management and Maintenance Tracking",
           description:
-            "Keep maintenance history on record, follow completed work over time, and manage your motorcycle’s care routine in a more organized way.",
-          highlights: ["Maintenance history view", "Service tracking", "Consistent record keeping"],
-        },
-        {
-          id: "digital-garage",
-          kicker: "04 / PERSONAL SPACE",
-          title: "Your Digital Garage",
-          description:
-            "Store your motorcycle in a space of your own, organize configurations, and grow your garage over time like a personal collection.",
-          highlights: ["Personal space", "Saved configurations", "Garage-centered experience"],
-        },
-        {
-          id: "share",
-          kicker: "05 / COMMUNITY SIGNAL",
-          title: "Share Your Build",
-          description:
-            "Share the builds you create, explore different setups, and make your motorcycle combinations visible within an inspiring community.",
-          highlights: ["Build sharing", "Community discovery", "Inspiring designs"],
+            "A digital management experience aimed at keeping motorcycle information and maintenance processes organized. Advanced maintenance records and reminders are part of the roadmap.",
+          highlights: ["Motorcycle management", "Maintenance tracking vision", "One-platform goal"],
         },
       ],
     },
     experience: {
-      eyebrow: "3D EXPERIENCE SHOWCASE",
-      title: "A vision for exploring the MT-07 in a digital garage",
+      eyebrow: "3D DIGITAL GARAGE",
+      title: "Don't just see your motorcycle. Step inside and explore it.",
       description:
-        "This section presents the Yamaha MT-07 digital garage concept through a cinematic showcase. As real visuals and richer interactions are added, the experience can grow in depth.",
-      showcaseLabel: "YAMAHA MT-07 / DIGITAL GARAGE",
+        "View supported motorcycle models in your 3D garage. Inspect them from different angles, get close to the details, and interact with your motorcycle.",
+      showcaseLabel: "MOTOCORE / 3D GARAGE",
       showcaseNote:
-        "No real showcase image has been added yet. Once provided, this area is ready to display the MT-07 composition without requiring layout changes.",
-      panelTitle: "Experience focus (concept)",
+        "No real showcase image has been added yet. Once provided, this area is ready to display the 3D garage composition without requiring layout changes.",
+      panelTitle: "Garage experience focus",
       panelItems: [
-        { label: "3D Inspection", value: "A showcase concept for exploring the motorcycle from different angles." },
-        { label: "Part Customization", value: "A planned direction for part-focused visual variation and editing." },
-        { label: "Color Personalization", value: "A concept approach for imagining color and style combinations." },
-        { label: "Digital Garage", value: "An experience layer centered on keeping your motorcycle in a personal digital space." },
+        { label: "3D Inspection", value: "View supported models from different angles and inspect details up close." },
+        { label: "Interactive Exploration", value: "A garage experience where you can interact with your motorcycle in a digital space." },
+        { label: "Supported Models", value: "The current catalog includes MT-07 2024, Yamaha YZF 2021, and a general motorcycle model." },
+        { label: "Digital Garage", value: "The vision of bringing your motorcycle together in a personal digital space." },
       ],
-      tags: ["3D MOTORCYCLE INSPECTION", "PART CUSTOMIZATION", "COLOR PERSONALIZATION", "DIGITAL GARAGE"],
+      tags: ["3D INSPECTION", "SUPPORTED MODELS", "INTERACTIVE GARAGE", "DIGITAL SHOWCASE"],
+    },
+    parts: {
+      eyebrow: "PART MANAGEMENT",
+      title: "Every part has a place in the story.",
+      description:
+        "On supported motorcycles, select parts individually, visually remove or reattach them. As you explore different parts, shape your motorcycle's digital configuration to match your preferences.",
+      highlights: [
+        "Part selection on supported models",
+        "Visual remove and reattach",
+        "Personal digital configuration",
+      ],
+    },
+    maintenance: {
+      eyebrow: "MAINTENANCE & MANAGEMENT",
+      title: "Don't lose track of your journey.",
+      description:
+        "MotoCore aims to offer a management experience where you can keep your motorcycles' mileage and maintenance information organized. It's building toward a digital garage where you can track oil changes, chain maintenance, and other periodic service history in one place.",
+      highlights: [
+        "Mileage and maintenance information",
+        "Periodic service history",
+        "One-place management goal",
+      ],
+      note: "This section describes MotoCore's maintenance and management vision on the roadmap; features not yet completed are not presented as live.",
+    },
+    audience: {
+      eyebrow: "WHO IT'S FOR",
+      title: "For anyone who wants to know their motorcycle more closely.",
+      description:
+        "Whether you own your first motorcycle or have been riding for years, MotoCore is being built for riders who want to explore their motorcycle digitally, inspect its parts, and manage the motorcycles they own more systematically.",
+    },
+    vision: {
+      eyebrow: "VISION",
+      title: "The future of motorcycle ownership starts with a digital garage.",
+      description:
+        "MotoCore's goal is to bring 3D visualization, personalization, and maintenance management together to create a comprehensive digital ecosystem for motorcycle owners. We want every motorcycle to have its own digital space, and every rider to have their own garage.",
     },
     video: {
       eyebrow: "PROMO VIDEO",
@@ -251,14 +270,14 @@ export const en: Dictionary = {
     },
     finalCta: {
       eyebrow: "MOTOCORE",
-      title: "Continue exploring the digital garage vision",
+      title: "You're in control of your digital garage.",
       description:
-        "The MotoCore experience is taking shape step by step. The app is not yet published in stores, so we do not provide download links; you can explore visuals, the promo video, features, and the current information pages instead.",
-      primaryCta: "See Photos & Video",
-      primaryCtaHref: "#gallery",
+        "Ready to explore your motorcycle and experience MotoCore?",
+      primaryCta: "Explore MotoCore",
+      primaryCtaHref: "#intro",
       secondaryCta: "Permissions & Privacy",
       secondaryCtaHref: "/en/permissions",
-      note: "This area will be updated when official store links are available. No non-working download buttons are shown.",
+      note: "The app is not yet published in stores, so download links are not provided.",
     },
   },
   legal: {
