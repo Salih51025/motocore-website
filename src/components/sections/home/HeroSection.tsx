@@ -80,13 +80,24 @@ export function HeroSection({ dict }: { dict: Dictionary }) {
                 {hero.primaryCta}
               </Button>
               <Button
-                href="#features"
+                href="#gallery"
                 size="md"
                 variant="secondary"
                 className="w-full !border-white/80 !bg-transparent !text-foreground !shadow-none hover:!border-[var(--border-strong)] hover:!bg-[rgba(24,34,46,0.96)] hover:!text-white active:!border-[var(--border-strong)] active:!bg-[rgba(24,34,46,0.96)] active:!text-white sm:w-auto sm:min-w-[11.5rem]"
               >
                 {hero.secondaryCta}
               </Button>
+            </div>
+
+            <div className="hero-reveal hero-reveal-6 mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+              <a href="#video" className="inline-flex items-center gap-1.5 text-[var(--text-secondary)] transition-colors hover:text-primary-bright focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] rounded-sm">
+                <span aria-hidden="true" className="text-primary-bright/80">▶</span>
+                {dict.locale === "tr" ? "Tanıtım videosunu izle" : "Watch promo video"}
+              </a>
+              <a href="#app-screenshots" className="inline-flex items-center gap-1.5 text-[var(--text-secondary)] transition-colors hover:text-primary-bright focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] rounded-sm">
+                <span aria-hidden="true" className="text-primary-bright/80">▢</span>
+                {dict.locale === "tr" ? "Uygulama ekranlarını gör" : "See app screens"}
+              </a>
             </div>
 
             <div aria-hidden="true" className="hero-reveal hero-reveal-6 mt-8 hidden items-center gap-4 sm:flex">

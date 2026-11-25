@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -9,6 +12,26 @@ export function PromoVideoSection({ dict }: { dict: Dictionary }) {
   const locale = dict.locale;
   const media = siteMedia.promoVideo;
   const hasVideo = Boolean(media.src);
+  const [open, setOpen] = useState(false);
+  const inlineVideoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    inlineVideoRef.current?.pause();
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
+
+  const closeLabel = locale === "tr" ? "Kapat" : "Close";
+  const expandLabel = locale === "tr" ? "Videoyu büyüt" : "Expand video";
 
   return (
     <section
@@ -30,9 +53,24 @@ export function PromoVideoSection({ dict }: { dict: Dictionary }) {
                 <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-primary-bright">
                   {video.frameLabel}
                 </p>
-                <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.16em] text-[var(--text-muted)]">
-                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-primary-bright/70" />
-                  <span>{video.statusLabel}</span>
+                <div className="flex items-center gap-2">
+                  {hasVideo ? (
+                    <button
+                      type="button"
+                      onClick={() => setOpen(true)}
+                      className="inline-flex items-center gap-2 rounded-md border border-[var(--border-subtle)] bg-[rgba(11,15,20,0.55)] px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--text-secondary)] transition-colors hover:border-[var(--border-strong)] hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)]"
+                      aria-label={expandLabel}
+                    >
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                      </svg>
+                      {expandLabel}
+                    </button>
+                  ) : null}
+                  <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.16em] text-[var(--text-muted)]">
+                    <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-primary-bright/70" />
+                    <span>{video.statusLabel}</span>
+                  </div>
                 </div>
               </div>
 
@@ -41,6 +79,7 @@ export function PromoVideoSection({ dict }: { dict: Dictionary }) {
 
                 {hasVideo && media.src ? (
                   <video
+                    ref={inlineVideoRef}
                     className="relative z-[1] h-full w-full object-cover"
                     controls
                     playsInline
@@ -101,6 +140,53 @@ export function PromoVideoSection({ dict }: { dict: Dictionary }) {
           </div>
         </div>
       </PageContainer>
+
+      {open && hasVideo && media.src ? (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-[rgba(5,7,11,0.88)] p-4 backdrop-blur-sm sm:p-6"
+          role="dialog"
+          aria-modal="true"
+          aria-label={media.label[locale] || video.title}
+          onClick={() => setOpen(false)}
+        >
+          <button
+            type="button"
+            className="absolute right-4 top-4 z-[101] inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border-subtle)] bg-[rgba(11,15,20,0.72)] text-foreground hover:border-[var(--border-strong)] hover:bg-[rgba(18,24,33,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)]"
+            onClick={() => setOpen(false)}
+            aria-label={closeLabel}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+          </button>
+          <div
+            className="w-full max-w-6xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="overflow-hidden rounded-2xl border border-[var(--border-subtle)] bg-[rgba(11,15,20,0.72)] shadow-[var(--shadow-panel)]">
+              <video
+                className="aspect-video w-full bg-black"
+                controls
+                autoPlay
+                playsInline
+                preload="metadata"
+                poster={media.poster}
+                aria-label={media.label[locale] || video.title}
+              >
+                <source src={media.src} />
+                {media.captionsSrc ? (
+                  <track
+                    kind="captions"
+                    src={media.captionsSrc}
+                    srcLang={media.captionsLang ?? locale}
+                    label={(media.captionsLang ?? locale) === "tr" ? "Türkçe" : "English"}
+                  />
+                ) : null}
+              </video>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </section>
   );
 }

@@ -105,16 +105,30 @@ export function Navbar({ locale, dict, path = "" }: NavbarProps) {
       {open ? (
         <div id="mobile-menu" className="border-t border-[var(--border-subtle)] bg-[rgba(11,15,20,0.98)] md:hidden">
           <PageContainer className="flex flex-col gap-2 py-4">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="flex min-h-10 items-center rounded-md px-3 py-2 text-sm text-[var(--text-secondary)] transition-colors hover:bg-[rgba(18,24,33,0.8)] hover:text-foreground"
-                onClick={() => setOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isMedia =
+                item.href.includes("#gallery") ||
+                item.href.includes("#app-screenshots") ||
+                item.href.includes("#video");
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={cn(
+                    "flex min-h-10 items-center rounded-md px-3 py-2 text-sm transition-colors hover:bg-[rgba(18,24,33,0.8)] hover:text-foreground",
+                    isMedia
+                      ? "text-primary-bright/90 bg-[rgba(0,209,255,0.04)]"
+                      : "text-[var(--text-secondary)]",
+                  )}
+                  onClick={() => setOpen(false)}
+                >
+                  {isMedia ? (
+                    <span aria-hidden="true" className="mr-2 h-1.5 w-1.5 rounded-full bg-primary-bright/70" />
+                  ) : null}
+                  {item.label}
+                </Link>
+              );
+            })}
             <div className="mt-2 flex items-center gap-2 border-t border-[var(--border-subtle)] pt-3">
               <span className="text-xs font-medium text-[var(--text-secondary)]">{dict.nav.language}:</span>
               <Link

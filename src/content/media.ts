@@ -110,7 +110,7 @@ export const mediaPaths = {
 export const siteMedia: SiteMedia = {
   hero: {
     desktop: {
-      src: undefined, // hazır olduğunda: mediaPaths.heroDesktop
+      src: mediaPaths.heroDesktop,
       alt: {
         tr: "MotoCore dijital motosiklet garajı hero görseli (masaüstü)",
         en: "MotoCore digital motorcycle garage hero image (desktop)",
@@ -134,7 +134,7 @@ export const siteMedia: SiteMedia = {
   },
   experience: {
     showcase: {
-      src: undefined, // hazır olduğunda: mediaPaths.experienceShowcase
+      src: mediaPaths.experienceShowcase,
       alt: {
         tr: "MotoCore 3D deneyim ve motosiklet vitrin görseli",
         en: "MotoCore 3D experience and motorcycle showcase image",
@@ -148,7 +148,7 @@ export const siteMedia: SiteMedia = {
   motorcycleDetailGallery: [
     {
       id: "motorcycle-overview",
-      src: undefined, // hazır olduğunda: mediaPaths.detailMotorcycleOverview
+      src: mediaPaths.detailMotorcycleOverview,
       alt: {
         tr: "Yamaha MT-07 genel görünüm — karanlık garaj ortamında motosiklet detayı",
         en: "Yamaha MT-07 overview — motorcycle in a dark garage setting",
@@ -165,7 +165,7 @@ export const siteMedia: SiteMedia = {
     },
     {
       id: "engine-detail",
-      src: undefined, // hazır olduğunda: mediaPaths.detailEngine
+      src: mediaPaths.detailEngine,
       alt: {
         tr: "Yamaha MT-07 motor ve mekanik detay yakın planı",
         en: "Yamaha MT-07 engine and mechanical close-up detail",
@@ -182,7 +182,7 @@ export const siteMedia: SiteMedia = {
     },
     {
       id: "customization-showcase",
-      src: undefined, // hazır olduğunda: mediaPaths.detailCustomization
+      src: mediaPaths.detailCustomization,
       alt: {
         tr: "Yamaha MT-07 kişiselleştirme ve parça detayı vitrin görseli",
         en: "Yamaha MT-07 customization and parts showcase detail",
@@ -199,7 +199,7 @@ export const siteMedia: SiteMedia = {
     },
     {
       id: "mechanical-details",
-      src: undefined, // hazır olduğunda: mediaPaths.detailMechanical
+      src: mediaPaths.detailMechanical,
       alt: {
         tr: "Yamaha MT-07 gövde, şasi ve mekanik yüzey detayları",
         en: "Yamaha MT-07 body, chassis, and mechanical surface details",
@@ -218,7 +218,7 @@ export const siteMedia: SiteMedia = {
   appScreenshots: [
     {
       id: "digital-garage",
-      src: undefined, // hazır olduğunda: mediaPaths.appGarage
+      src: mediaPaths.appGarage,
       label: { tr: "Garaj", en: "Garage" },
       caption: {
         tr: "Dijital garaj akışını göstermek için planlanan gerçek ekran görüntüsü alanı.",
@@ -231,7 +231,7 @@ export const siteMedia: SiteMedia = {
     },
     {
       id: "customization-3d",
-      src: undefined, // hazır olduğunda: mediaPaths.appCustomization
+      src: mediaPaths.appCustomization,
       label: { tr: "Özelleştirme", en: "Customization" },
       caption: {
         tr: "Renk ve parça odaklı kişiselleştirme akışı için planlanan vitrin alanı.",
@@ -244,7 +244,7 @@ export const siteMedia: SiteMedia = {
     },
     {
       id: "maintenance-tracking",
-      src: undefined, // hazır olduğunda: mediaPaths.appMaintenance
+      src: mediaPaths.appMaintenance,
       label: { tr: "Bakım", en: "Maintenance" },
       caption: {
         tr: "Bakım takibi ve geçmişi ile ilgili akışlar için planlanan vitrin alanı.",
@@ -257,7 +257,7 @@ export const siteMedia: SiteMedia = {
     },
     {
       id: "motorcycle-details",
-      src: undefined, // hazır olduğunda: mediaPaths.appMotorcycleDetails
+      src: mediaPaths.appMotorcycleDetails,
       label: { tr: "Motosiklet Detayları", en: "Motorcycle Details" },
       caption: {
         tr: "Model ve detay inceleme ekranları için ayrılmış gerçek görüntü alanı.",
@@ -270,7 +270,7 @@ export const siteMedia: SiteMedia = {
     },
     {
       id: "community-shared-builds",
-      src: undefined, // hazır olduğunda: mediaPaths.appCommunity
+      src: mediaPaths.appCommunity,
       label: { tr: "Topluluk", en: "Community" },
       caption: {
         tr: "Paylaşılan yapılar ve topluluk keşfi ekranları için planlanan alan.",
@@ -283,7 +283,7 @@ export const siteMedia: SiteMedia = {
     },
   ],
   promoVideo: {
-    src: undefined, // hazır olduğunda: mediaPaths.promoVideo
+    src: mediaPaths.promoVideo,
     poster: undefined, // hazır olduğunda: mediaPaths.promoPoster
     captionsSrc: undefined, // hazır olduğunda: locale’a göre mediaPaths.promoCaptionsTr/En
     captionsLang: undefined,

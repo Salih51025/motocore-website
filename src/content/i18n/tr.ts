@@ -65,7 +65,7 @@ export const tr: Dictionary = {
       description:
         "MotoCore; motosikletini 3D ortamda keşfetmeni, kişiselleştirme fikirlerini denemeni ve bakım sürecini tek bir dijital alanda düzenli hayal etmeni sağlar.",
       primaryCta: "MotoCore'u Keşfet",
-      secondaryCta: "Özellikleri İncele",
+      secondaryCta: "Fotoğraf ve Videoyu Gör",
       status: "Konsept vitrin • Uygulama geliştirme aşamasında",
       clarityPoints: [
         "3D garajda incele",
@@ -253,9 +253,9 @@ export const tr: Dictionary = {
       eyebrow: "MOTOCORE",
       title: "Dijital garaj vizyonunu keşfetmeye devam et",
       description:
-        "MotoCore deneyimi adım adım şekilleniyor. Uygulama henüz mağazalarda yayınlanmadığı için indirme bağlantısı paylaşmıyoruz; özellikleri ve güncel bilgilendirme sayfalarını inceleyebilirsiniz.",
-      primaryCta: "Özellikleri İncele",
-      primaryCtaHref: "#features",
+        "MotoCore deneyimi adım adım şekilleniyor. Uygulama henüz mağazalarda yayınlanmadığı için indirme bağlantısı paylaşmıyoruz; görselleri, tanıtım videosunu, özellikleri ve güncel bilgilendirme sayfalarını inceleyebilirsiniz.",
+      primaryCta: "Fotoğraf ve Videoyu Gör",
+      primaryCtaHref: "#gallery",
       secondaryCta: "İzinler ve Gizlilik",
       secondaryCtaHref: "/tr/permissions",
       note: "Mağaza bağlantıları yayımlandığında bu alan güncellenecektir. Çalışmayan indirme butonu gösterilmez.",

@@ -65,7 +65,7 @@ export const en: Dictionary = {
       description:
         "MotoCore helps you explore your motorcycle in 3D, experiment with personalization ideas, and imagine maintenance tracking in one organized digital space.",
       primaryCta: "Explore MotoCore",
-      secondaryCta: "View Features",
+      secondaryCta: "See Photos & Video",
       status: "Concept showcase • App in development",
       clarityPoints: [
         "Inspect in a 3D garage",
@@ -253,9 +253,9 @@ export const en: Dictionary = {
       eyebrow: "MOTOCORE",
       title: "Continue exploring the digital garage vision",
       description:
-        "The MotoCore experience is taking shape step by step. The app is not yet published in stores, so we do not provide download links; you can explore features and the current information pages instead.",
-      primaryCta: "Explore Features",
-      primaryCtaHref: "#features",
+        "The MotoCore experience is taking shape step by step. The app is not yet published in stores, so we do not provide download links; you can explore visuals, the promo video, features, and the current information pages instead.",
+      primaryCta: "See Photos & Video",
+      primaryCtaHref: "#gallery",
       secondaryCta: "Permissions & Privacy",
       secondaryCtaHref: "/en/permissions",
       note: "This area will be updated when official store links are available. No non-working download buttons are shown.",
